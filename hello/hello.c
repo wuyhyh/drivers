@@ -8,13 +8,13 @@ MODULE_DESCRIPTION("A simple Hello World Kernel Module");
 
 static int __init hello_init(void)
 {
-  printk(KERN_INFO "Hello, Kernel!\n");
-  return 0;
+	printk(KERN_INFO "Hello, Kernel!\n");
+	return 0;
 }
 
 static void __exit hello_exit(void)
 {
-  printk(KERN_INFO "Goodbye, Kernel!\n");
+	printk(KERN_INFO "Goodbye, Kernel!\n");
 }
 
 module_init(hello_init);

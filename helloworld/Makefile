@@ -1,4 +1,4 @@
-obj-m := helloworld.o
+obj-m := helloworld.o helloworld_params.o
 
 KERNELDIR ?= /lib/modules/$(shell uname -r)/build
 CC = x86_64-linux-gnu-gcc-13
